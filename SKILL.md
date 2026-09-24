@@ -1,9 +1,9 @@
 ---
-name: frame-screenshot
-description: Frame an image like a macOS window screenshot — rounded corners, a soft drop shadow, transparent margins, optional 16:9 padding. Use when a screenshot, crop, chart, UI capture or exported image is going onto a web page, a product listing, a slide or a thumbnail and needs to sit on the background instead of looking pasted on; when the user says "add a shadow", "make it look like a Mac screenshot", "frame this", "round the corners"; or when preparing captures for a post, a store listing or a README.
+name: frame-it
+description: Frame an image like a macOS window screenshot — rounded corners, a soft drop shadow, transparent margins, optional 16:9 padding. Use when a screenshot, crop, chart, UI capture or exported image is going onto a web page, a product listing, a slide or a thumbnail and needs to sit on the background instead of looking pasted on; when the user says "add a shadow", "make it look like a Mac screenshot", "frame this", "frame it", "round the corners"; or when preparing captures for a post, a store listing or a README.
 ---
 
-# Frame a screenshot the way macOS does
+# Frame It! · frame a screenshot the way macOS does
 
 macOS gives a **window** capture (Cmd+Shift+4, then Space) rounded corners and a shadow for
 free. Everything else arrives as a hard-edged rectangle: a region capture, a crop out of a
@@ -109,7 +109,7 @@ For a daily habit, a shell alias beats a conversation. Add to `~/.zshrc`:
 
 ```bash
 frame-it() {
-  local s=~/.claude/skills/frame-screenshot/scripts/frame_shot.py
+  local s=~/.claude/skills/frame-it/scripts/frame_shot.py
   if [ $# -eq 0 ]; then python3 "$s" -c; else python3 "$s" "$@"; fi
 }
 ```
